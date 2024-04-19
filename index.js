@@ -12,6 +12,7 @@ const cwd = process.cwd();
 
     while(true) {
         const res = await startFarmManager();
+        process.exit(0);
     }
 
     async function startFarmManager() {
@@ -33,7 +34,7 @@ const cwd = process.cwd();
                 break;
             } 
             case("Others"): {
-                actionChoices = ["CorrectMnemoTG",  "CreateFarm", "..."];
+                actionChoices = ["CorrectMnemoTG",  "CreateFarm", "CorrectProxyAccounts", "..."];
                 break;
             }
             case("..."): {
