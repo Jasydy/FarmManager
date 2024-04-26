@@ -12,7 +12,7 @@ const cwd = process.cwd();
 
     while(true) {
         const res = await startFarmManager();
-        process.exit(0);
+        // process.exit(0);
     }
 
     async function startFarmManager() {
@@ -26,7 +26,7 @@ const cwd = process.cwd();
         let actionChoices;
         switch(topic.trim()) {
             case("Tg"): {
-                actionChoices = ["LaunchAccounts", "LaunchAccountsTemp", "Import", "Export", "UpdateTg", "..."];
+                actionChoices = ["LaunchAccounts", "LaunchAccountsTemp", "Export", "UpdateTg", "..."];
                 break;
             } 
             case("Data"): {
