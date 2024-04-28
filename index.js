@@ -26,7 +26,7 @@ const cwd = process.cwd();
         let actionChoices;
         switch(topic.trim()) {
             case("Tg"): {
-                actionChoices = ["LaunchAccounts", "LaunchAccountsTemp", "Export", "UpdateTg", "..."];
+                actionChoices = ["LaunchAccounts", "Export", "UpdateTg", "..."];
                 break;
             } 
             case("Data"): {
